@@ -3,7 +3,7 @@
 ------------
 
 2.1 DECLARACION DE VARIABLES
-
+{
 - Declaracion de variables
 Para declarar variables se usa la siguiente sintaxis:
 
@@ -50,9 +50,10 @@ Evitar errores como:
 - Cuando declararlas?
 Cuando quieras, es lo bueno de C++. En C, por ejemplo, debes declara las variables en la parte
 de arriba del programa. En C++ no importa donde lo hagas.
+}
 
 2.2 PALABRAS CLAVE Y INDENTIFICACION POR NOMBRE
-
+{
 - Palabras Clave
 Hay 63 palabras clave que no debes usar, ya que son exclusivas de C++
 asm			auto 		bool * 		break	case	catch	char	class 	const	const_cast *
@@ -96,9 +97,10 @@ int main()
 	return 0;
 }
 =ENDCODE=
-
+}
 
 2.4 ENTEROS
+{
 Un entero es un tipo de variable que puede tener numeros enteros xd
 C++ tiene 4 tipos: char, short, int y long. La diferencia entre ellos  es que
 varian en tamano. Uno puede almacenar un numero mucho mas grande que el otro.
@@ -166,5 +168,4 @@ x is now: 0
 
 Es como que si sobrepasa, entonces regresa al inicio. Sucede algo parecido cuando es
 viceversa.
-
-
+}
