@@ -2,7 +2,7 @@
 - GUIA C++ -
 ------------
 
-DECLARACION DE VARIABLES
+2.1 DECLARACION DE VARIABLES
 
 - Declaracion de variables
 Para declarar variables se usa la siguiente sintaxis:
@@ -51,7 +51,7 @@ Evitar errores como:
 Cuando quieras, es lo bueno de C++. En C, por ejemplo, debes declara las variables en la parte
 de arriba del programa. En C++ no importa donde lo hagas.
 
-PALABRAS CLAVE Y INDENTIFICACION POR NOMBRE
+2.2 PALABRAS CLAVE Y INDENTIFICACION POR NOMBRE
 
 - Palabras Clave
 Hay 63 palabras clave que no debes usar, ya que son exclusivas de C++
@@ -72,7 +72,7 @@ identificador. Puedes llamarlo como quieras, pero existen algunas reglas:
 	3. Debe comenzar con una letra minuscula o un guion bajo. No puede comenzar con un numero
 	4. C++ distingue entre minusculas y mayusculas.
 
-EL OPERADOR sizeof()
+2.3 EL OPERADOR sizeof()
 Para determinar el tamano de un tipo de variable en una compuadora en particular, C++ provee
 el operador sizeof. Regresa en bytes el tamano del tipo, esto varia en distintas
 computadoras.
@@ -98,7 +98,7 @@ int main()
 =ENDCODE=
 
 
-ENTEROS
+2.4 ENTEROS
 Un entero es un tipo de variable que puede tener numeros enteros xd
 C++ tiene 4 tipos: char, short, int y long. La diferencia entre ellos  es que
 varian en tamano. Uno puede almacenar un numero mucho mas grande que el otro.
