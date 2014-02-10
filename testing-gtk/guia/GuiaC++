@@ -189,3 +189,81 @@ viceversa.
 {
 	// Numeros constantes
 }
+
+2.9 NOTACION HUNGARIANA (?)
+{
+	// Mosuc
+}
+
+3.1 PRECEDENCIA Y ASOCIATIVIDAD
+{
+	// Precedencia y asociatividad
+}
+
+3.2 OPERADORES ARITMETICOS
+{
+	// operadores aritmeticos
+}
+
+3.3 OPERADORES DE INCREMENTACION/DECREMENTACION (?) Y EFECTOS SECUNDARIOS
+{
+	// ++ --
+}
+
+3.4 sizeof, comma y operadores aritmeticos con 'if'
+{
+	// if ()...
+}
+
+3.5 COMPARADORES
+{
+}
+
+3.6 OPERADORES LOGICOS
+{
+}
+
+3.7 CONVERSION ENTRE BINARIOS Y DECIMALES
+{
+}
+
+3.8 OPERADORES NIVEL-BIT
+{
+}
+
+4.1 BLOCKS Y VARIABLES LOCALES
+{
+}
+
+4.2 VARIABLES GLOBALES
+{
+}
+
+4.3 ALCANCE DE ARCHIVOS Y LA PALABRA CLAVE static
+{
+}
+
+4.4 CONVERSION DE TIPOS Y CASTING
+{
+}
+
+4.5 TIPOS ENUMERADOS
+{
+}
+
+4.6 TYPEDEFS
+{
+}
+
+4.7 STRUCS
+{
+}
+
+
+
+
+
+
+
+
+
