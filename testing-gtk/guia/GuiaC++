@@ -169,3 +169,13 @@ x is now: 0
 Es como que si sobrepasa, entonces regresa al inicio. Sucede algo parecido cuando es
 viceversa.
 }
+
+2.6 BOOLEANOS
+{
+	// Cuando se trata de verdadero o falso
+}
+
+2.8 CONSTANTES
+{
+	// Numeros constantes
+}
