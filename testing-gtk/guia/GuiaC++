@@ -184,7 +184,6 @@ viceversa.
 
 2.5 FLOATING POINTS
 {
-// Aqui va definicion para numeros flotantes
 A veces necesitamos contar con números más grandes que los tipo int pueden soportar, otras veces necesitamos números reales como 2.35 , 0.58327 ,etc  . Para esto estan los números de punto flotante, existen tres tipos:
 	-float  //4 bytes
 	-double //8 bytes 
@@ -247,7 +246,71 @@ Error típico por el rounding error que básicamente es cómo se guarda la varia
 
 2.6 BOOLEANOS
 {
-	// Cuando se trata de verdadero o falso
+Los booleanos pueden ser verdadero (1) o falso (0).
+Para declararlos, pues, es:
+	bool bValue;
+	bool bValue1 = true; // forma explicita
+	bool bValue2(false); // forma implicita
+
+Tambien se puede, asi como usar el menos para los enteros/flotantes/etc, se puede usar el operador NOT para cambiar de V a F y de F a V.
+	bool bValue1 = !true;
+	bool bValue2(!false);
+
+Los booleanos son evaluados en numeros, no como 'true' o 'false'
+
+=CODEAHEAD=
+	bool bValue = true;
+	cout << bValue << endl;
+	cout << !bValue << endl;
+=ENDCODE=
+
+=RESULTS=
+	1
+	0
+=ENDRSLT=
+
+Tambien se puede usar de la forma:
+=CODEAHEAD=
+	bool bValue = true;
+	if (bValue)
+		cout << 'bValue es verdadero' << endl;
+
+	bool bValue2 = true;
+	if (!bValue2)
+		cout << 'el if fue verdadero' << endl;
+	else
+		cout << 'el if fue falso' << endl;
+
+=ENDCODE=
+=RESULTS=
+	bValue es verdadero
+	el if fue falso
+=ENDRSLT=
+
+Una ultima forma de usarlo es dandolo como resultado de una funcion:
+
+=CODEAHEAD=
+	bool IsEqual(int x, int y)
+	{
+		return (x == y);
+	}
+
+	int main()
+	{
+		// se pide valores de 'x' y 'y'
+		// -- primera forma de hacerlo:
+		bool bEqual = IsEqual(x, y);
+		if (bEqual)
+			cout << x << ' y ' << y << ' son iguales' << endl;
+		else
+			// lo contrario
+
+		// -- segunda forma de hacerlo
+		if (IsEqual(x, y))
+			// Y bueno, aqui si fue/resulto verdadero
+	}
+=ENDCODE=
+
 }
 
 2.7 CHARS
