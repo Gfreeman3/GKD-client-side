@@ -45,14 +45,14 @@ Tambien podemos asignar valores
 Evitar errores como:
 	int nValue1, int nValue2;
 	int nValue1, double nValue2;
-	int nValue1, nValue = 5;
+	int nValue1, nValue = 5; // @DUDAKEN Probaste en serio este error? D::::
 
 - Cuando declararlas?
 Cuando quieras, es lo bueno de C++. En C, por ejemplo, debes declara las variables en la parte
 de arriba del programa. En C++ no importa donde lo hagas.
 }
 
-2.2 PALABRAS CLAVE Y INDENTIFICACION POR NOMBRE
+2.2 PALABRAS CLAVE E INDENTIFICACION POR NOMBRE
 {
 - Palabras Clave
 Hay 63 palabras clave que no debes usar, ya que son exclusivas de C++
@@ -71,10 +71,10 @@ identificador. Puedes llamarlo como quieras, pero existen algunas reglas:
 	2. Puede solo estar compuesta de letras, numeros y el guion bajo (_). No puede
 	tener simbolos o espacios.
 	3. Debe comenzar con una letra minuscula o un guion bajo. No puede comenzar con un numero
-	4. C++ distingue entre minusculas y mayusculas.
+	4. C++ distingue entre minusculas y mayusculas(Case Sensitive).
 
 2.3 EL OPERADOR sizeof()
-Para determinar el tamano de un tipo de variable en una compuadora en particular, C++ provee
+Para determinar el tamaño de un tipo de variable en una compuadora en particular, C++ provee
 el operador sizeof. Regresa en bytes el tamano del tipo, esto varia en distintas
 computadoras.
 
@@ -97,6 +97,18 @@ int main()
 	return 0;
 }
 =ENDCODE=
+=RESULTS=
+bool:		1 bytes
+char:		1 bytes
+wchar_t:	4 bytes
+short:		2 bytes
+int:		4 bytes
+long:		8 bytes
+float:		4 bytes
+double:		8 bytes
+long double:	16 bytes
+=ENDRSTS=
+
 }
 
 2.4 ENTEROS
@@ -122,7 +134,7 @@ signed short nShort;
 signed int nInt;
 signed long nLong;
 
-Si sabemos que no necesitaremos negativos, entonces usamos unsigned
+Si sabemos que no necesitaremos negativos, entonces usamos unsigned ( Esto dobla la cantida máxima que podríamos usar )
 unsigned char chChar;
 unsigned short nShort;
 unsigned int nInt;
@@ -172,8 +184,66 @@ viceversa.
 
 2.5 FLOATING POINTS
 {
-	// Aqui va definicion para numeros flotantes
-}
+// Aqui va definicion para numeros flotantes
+A veces necesitamos contar con números más grandes que los tipo int pueden soportar, otras veces necesitamos números reales como 2.35 , 0.58327 ,etc  . Para esto estan los números de punto flotante, existen tres tipos:
+	-float  //4 bytes
+	-double //8 bytes 
+	-long double //16 bytes
+	
+Como conveción se pone un decimal al menos para diferenciar de los otros al declarar variables:
+
+	int nValue = 5; // 5 means integer
+	float fValue = 5.0; // 5.0 means floating point
+
+Siéntete todo un crack declarando variables de punto flotante de modo científico:
+
+	double dValue1 = 500.0;
+	double dValue2 = 5e2; // another way to assign 500
+	 
+	double dValue3 = 0.05;
+	double dValue4 = 5e-2; // another way to assign 0.05
+
+Se puede determinar la precisión para cuando trabajemos con estas variables. La precisión predeterminada son 6 dígitos.
+
+=CODEAHEAD=
+	#include <iostream>
+	#include <iomanip> // for setprecision()
+	int main()
+	{
+    using namespace std;
+ 
+    cout << setprecision(16); // show 16 digits
+    float fValue = 3.33333333333333333333333333333333333333f;
+    cout << fValue << endl;
+    double dValue = 3.3333333333333333333333333333333333333;
+    cout << dValue << endl;	
+
+	}
+=ENDCODE=
+
+=RESULTS=
+	3.333333253860474 // como se puede ver, se pierde mucha precisión con float (a lo más se trabaja con 7 dígitos)
+	3.333333333333334 // double dobla la precisión de dígitos con los que se puede trabajar D:
+=ENDRESULTS=
+
+Los inconvenientes con este tipo de variables es que tiene muchos problemas de precisión, se debe tener cuidado cuando se compara números que son muy cercanos. Ejemplo.
+
+=CODEAHEAD=
+	float fValue1 = 1.345f;
+	float fValue2 = 1.123f;
+	float fTotal = fValue1 + fValue2; // should be 2.468
+	 
+	 if (fTotal == 2.468)
+	     cout << "fTotal is 2.468";
+	 else
+			 cout << "fTotal is not 2.468";
+=ENDCODE=
+
+=RESULTS=
+fTotal is not 2.468
+=ENDOCODE= 
+
+Error típico por el rounding error que básicamente es cómo se guarda la variable que en este caso tiene el valor de 2.4679999 que no es 2.468. ¡TENER CUIDADO AL COMPARAR CON PUNTO FLOTANTE!
 
 2.6 BOOLEANOS
 {
@@ -182,7 +252,47 @@ viceversa.
 
 2.7 CHARS
 {
-	// Chars...
+	Mira esto es sencillo, los chars son en realidad integers disfrazados D: guíados por ASCII.
+	Ejemplo, el caracter 'a' está asociado con 97 ( para el teclado inglés ).Entonces si tenemos:
+
+=CODEHEAD=
+	char chChar = 97; // assign char with ASCII code 97
+	cout << chChar; // will output 'a'
+
+	char chChar = 97;
+	cout << (int)chChar; // will output 97, not 'a'
+	// a esto de (int) se le llama MÁSCARA(casting en inglés), que es una forma que "disfrazar" otra vez. Osea, un integer disfrazado de char que está disfrazado de integer xD:
+=ENDCODE=
+
+Con esta info puedes hacerte un programa para sacar el número asociado a cada caracter D: pero para ahorrarte la molestia...
+
+=CODEHEAD=
+#include "iostream";
+ 
+ int main()
+ {
+     using namespace std;
+		 char chChar;
+		 cout << "Input a keyboard character: ";
+		 cin >> chChar; // cCHar solo tomará el primer caracter que escribas.
+		 cout << chChar << " has ASCII code " << (int)chChar << endl;
+ }
+=ENDCODE= 
+
+Muyayo ten cuidado, que cuando declaras chars, tienes que hacerlo con ' ' . Aclaración:
+
+	char chValue = '5'; // assigns 53 (ASCII code for '5')
+	char chValue2 = 5; // assigns 5
+
+Habrás notado que, a veces para hacer salto de línea haces '\n', bueno esto es llamado escape sequence. Aquí otras muy usadas.
+
+	\t - tab
+	\' - imprime un ' 
+	\" - imprime un "
+	\\ - imprime un \
+	\r - retorna a la primera parte de la linea
+	\v - vertical tab D: esto no me lo sabía
+
 }
 
 2.8 CONSTANTES
