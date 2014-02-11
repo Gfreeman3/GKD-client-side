@@ -1,0 +1,269 @@
+------------
+- GUIA C++ -
+------------
+
+2.1 DECLARACION DE VARIABLES
+{
+- Declaracion de variables
+Para declarar variables se usa la siguiente sintaxis:
+
+	type varName;
+
+Aqui, 5 diferentes variables de 5 diferentes tipos:
+
+	bool bValue;
+	char chValue;
+	int nValue;
+	float fValue;
+	double dValue;
+
+  + Asignamiento explicito
+	Usamos el operador igual (=)
+	
+	int nValue = 5;
+
+  + Asignamiento implicito
+
+	int nValue(5); 
+	Yep, parece una funcion, pero resulta que C++ lo identifica y bueno, el valor se
+	asigna a la variable.
+
+- Declaracion de multiples variables
+Es posible declarar multiples varaibles del mismo tipo en una sola linea separando los nombres
+con una coma
+
+	int nValue1, nValue2;
+	// que seria lo mismo que
+	int nValue1;
+	int nValue2;
+
+Tambien podemos asignar valores
+
+	int nValue1 = 5, nValue = 6;
+	int nValue3(7), nValue4(8);
+
+Evitar errores como:
+	int nValue1, int nValue2;
+	int nValue1, double nValue2;
+	int nValue1, nValue = 5;
+
+- Cuando declararlas?
+Cuando quieras, es lo bueno de C++. En C, por ejemplo, debes declara las variables en la parte
+de arriba del programa. En C++ no importa donde lo hagas.
+}
+
+2.2 PALABRAS CLAVE Y INDENTIFICACION POR NOMBRE
+{
+- Palabras Clave
+Hay 63 palabras clave que no debes usar, ya que son exclusivas de C++
+asm			auto 		bool * 		break	case	catch	char	class 	const	const_cast *
+continue	default		delete		do		double	dynamic_cast * 	else	enum	explicit *
+export *	extern		false *		float	for 	friend	goto	if		inline	int
+long		mutable *	namespace * new		operator		private	protected		public
+register	reinterpret_cast *		return 	short	signed	sizeof	static	static_cast *	struct
+switch		template 	this		throw	true *	try		typedef	typeid *		typename *
+union 		unsigned	using *		virtual	void	volatile		wchar_t *		while 
+
+- Identificadores y como nombrarlos
+El nombre de una variable, una funcion, clase o cualquier otra entidad en C++ se llama
+identificador. Puedes llamarlo como quieras, pero existen algunas reglas:
+	1. El nombre no puede ser una palabra clave
+	2. Puede solo estar compuesta de letras, numeros y el guion bajo (_). No puede
+	tener simbolos o espacios.
+	3. Debe comenzar con una letra minuscula o un guion bajo. No puede comenzar con un numero
+	4. C++ distingue entre minusculas y mayusculas.
+
+2.3 EL OPERADOR sizeof()
+Para determinar el tamano de un tipo de variable en una compuadora en particular, C++ provee
+el operador sizeof. Regresa en bytes el tamano del tipo, esto varia en distintas
+computadoras.
+
+Ej:
+=CODEAHEAD=
+#include <iostream>
+
+int main()
+{
+	using namespace std;
+	cout << "bool:\t\t" << sizeof(bool) << " bytes" << endl;
+	cout << "char:\t\t" << sizeof(char) << " bytes" << endl;
+	cout << "wchar_t:\t" << sizeof(wchar_t) << " bytes" << endl;
+	cout << "short:\t\t" << sizeof(short) << " bytes" << endl;
+	cout << "int:\t\t" << sizeof(int) << " bytes" << endl;
+	cout << "long:\t\t" << sizeof(long) << " bytes" << endl;
+	cout << "float:\t\t" << sizeof(float) << " bytes" << endl;
+	cout << "double:\t\t" << sizeof(double) << " bytes" << endl;
+	cout << "long double:\t" << sizeof(long double) << " bytes" << endl;
+	return 0;
+}
+=ENDCODE=
+}
+
+2.4 ENTEROS
+{
+Un entero es un tipo de variable que puede tener numeros enteros xd
+C++ tiene 4 tipos: char, short, int y long. La diferencia entre ellos  es que
+varian en tamano. Uno puede almacenar un numero mucho mas grande que el otro.
+otra vez, depende de la computadora.
+
+Declaramos alguno de la forma:
+char chChar;
+short int nShort; 	// 'short int' es tecnicamente correcto
+short nShort;		// quizas es mas preferido
+int nInteger;
+long int nLong;		// asi como el short int
+long nLong;			// preferido
+
+- Variables 'firmadas' (signed) y 'no firmadas' (unsigned)
+Una variable 'firmada' es una que puede almacenar tanto negativos como positivos.
+Para declarar una variable firmada se usa la palabra 'signed'
+signed char chChar;
+signed short nShort;
+signed int nInt;
+signed long nLong;
+
+Si sabemos que no necesitaremos negativos, entonces usamos unsigned
+unsigned char chChar;
+unsigned short nShort;
+unsigned int nInt;
+unsigned long nLong;
+
+Predeterminadamente, todas las variables declaras sin signed/unsigned son 'signed'.
+
+# Nota del traductor: tal parece que signed viene de signo (+/-) mas que de firma xd
+
+Entonces, aqui una tablita con los rangos:
+Tamano y tipo		Rango
+1 byte signed		-128 a 127
+1 byte unsigned		0 a 255
+2 byte signed		-32,768 a 32,767
+2 byte unsigned		0 a 65,535
+4 byte signed		-2,147,483,648 a 2,147,483,647
+4 byte unsigned		0 a 4,294,967,296
+8 byte signed		-9,223,372,036,854,775,807 a 9,223,372,036,854,775,807
+8 byte unsigned		0 a 18,446,744,073,709,551,615
+
+Para una variable 'signed' de n-bits tiene el rango de  -(2^(n-1)) a (2^(n-1))-1.
+Para una variable 'unsigned' de n-bits tiene el rango de 0 a (2^n)-1
+
+- Overflow
+Cuando sobrepasas un tipo de variable.
+
+=CODEAHEAD=
+#include <iostream>
+ 
+int main()
+{
+    using namespace std;
+    unsigned short x = 65535; // largest 2-byte unsigned value possible
+    cout << "x was: " << x << endl;
+    x = x + 1; // We desire 65536, but we get overflow!
+    cout << "x is now: " << x << endl;
+}
+=ENDCODE=
+=RESULTS=
+x was: 65535
+x is now: 0
+=ENDRSTS=
+
+Es como que si sobrepasa, entonces regresa al inicio. Sucede algo parecido cuando es
+viceversa.
+}
+
+2.5 FLOATING POINTS
+{
+	// Aqui va definicion para numeros flotantes
+}
+
+2.6 BOOLEANOS
+{
+	// Cuando se trata de verdadero o falso
+}
+
+2.7 CHARS
+{
+	// Chars...
+}
+
+2.8 CONSTANTES
+{
+	// Numeros constantes
+}
+
+2.9 NOTACION HUNGARIANA (?)
+{
+	// Mosuc
+}
+
+3.1 PRECEDENCIA Y ASOCIATIVIDAD
+{
+	// Precedencia y asociatividad
+}
+
+3.2 OPERADORES ARITMETICOS
+{
+	// operadores aritmeticos
+}
+
+3.3 OPERADORES DE INCREMENTACION/DECREMENTACION (?) Y EFECTOS SECUNDARIOS
+{
+	// ++ --
+}
+
+3.4 sizeof, comma y operadores aritmeticos con 'if'
+{
+	// if ()...
+}
+
+3.5 COMPARADORES
+{
+}
+
+3.6 OPERADORES LOGICOS
+{
+}
+
+3.7 CONVERSION ENTRE BINARIOS Y DECIMALES
+{
+}
+
+3.8 OPERADORES NIVEL-BIT
+{
+}
+
+4.1 BLOCKS Y VARIABLES LOCALES
+{
+}
+
+4.2 VARIABLES GLOBALES
+{
+}
+
+4.3 ALCANCE DE ARCHIVOS Y LA PALABRA CLAVE static
+{
+}
+
+4.4 CONVERSION DE TIPOS Y CASTING
+{
+}
+
+4.5 TIPOS ENUMERADOS
+{
+}
+
+4.6 TYPEDEFS
+{
+}
+
+4.7 STRUCS
+{
+}
+
+
+
+
+
+
+
+
+
