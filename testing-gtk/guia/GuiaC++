@@ -46,6 +46,7 @@ Evitar errores como:
 	int nValue1, int nValue2;
 	int nValue1, double nValue2;
 	int nValue1, nValue = 5; // @DUDAKEN Probaste en serio este error? D::::
+													 //	@Diego Pues, no... pero de acuerdo con la pagina, si existen errores. Tu no has tenido ese error antes? D:
 
 - Cuando declararlas?
 Cuando quieras, es lo bueno de C++. En C, por ejemplo, debes declara las variables en la parte
@@ -97,6 +98,9 @@ int main()
 	return 0;
 }
 =ENDCODE=
+
+@Diego Recuerda que este resultado es solo para la computadora de quien lo compilo y ejecuto ya que varia dependiendo de la pc compiladora.
+
 =RESULTS=
 bool:		1 bytes
 char:		1 bytes
