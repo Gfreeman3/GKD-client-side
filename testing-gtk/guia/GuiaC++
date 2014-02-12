@@ -360,7 +360,42 @@ Habrás notado que, a veces para hacer salto de línea haces '\n', bueno esto es
 
 2.8 CONSTANTES
 {
-	// Numeros constantes
+	En C++ hay dos tipo de constantes: literales y simbolicos.
+	- Constantes literales
+		Las constantes literales son los numeros insertados directamente en el codigo. No cambian su valor, por eso son constantes.
+
+		int x = 5;
+
+		Estos numeros pueden tener sufijos para determinar su tipo. Tales como u/U para determinar si son unsigned o l/L para determinar si son Long.
+		pero es opcional, ya que el compilador mayormente lo encuentra.
+
+		unsigned int nValue = 5u; 	// constante sin-signo
+		long nValue2 = 5L; 					// constante en Long
+
+		Generalmente no es buena idea hacer constantes literales que no sean 0 o 1. Luego se vera por que (numeros magicos, dice) 
+
+	- Constantes Simbolicas
+		Usando el #define puedes crear 'variables' que son ser cambiadas antes de compilar
+		
+		#define PEN_PER_USD 2.58
+		float nPen = nDollars * PEN_PER_USD;
+
+		El problema con esto es que nunca podras ver el #define al momento de buscar errores con el debugger. Luego, si tu codigo es largaso
+		y quieres saber que es PEN_PER_USD tendrias que ir a las primeras lineas de tu codigo. (Si muchacho, deben estar al principio del codigo).
+		Otra cosa es que son variables globales y pueden tener comflictos si tienes el mismo nombre para esa variable en otro pedazo de codigo.
+
+		Existe otra forma de crear constantes:
+
+		const float nPenPerUsd = 2.58;
+		float nPen = nDollars * nPenPerUsd;
+
+		Ese nPenPerUsd no podra ser modificado nunca en la vida.
+		const int nRandom = 14534;
+		nRandom = 123; // Error de compilador.
+
+		Resulta que estos numeros constantes pueden ser bastante buena ayuda. Hay algunos que usan todo en mayusculas (como el ejemplo de PEN_PER_USD)
+		pero si nos quedamos en la notacion hugariana sera mejor ya que no tendremos que lidiar mucho con los nombres
+
 }
 
 2.9 NOTACION HUNGARIANA (?)
