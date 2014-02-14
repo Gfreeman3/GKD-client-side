@@ -1,0 +1,104 @@
+Situacion:
+	Ambos modificamos un mismo archivo, el tuyo tiene cosas diferentes a la mia y ademas
+		puedes modificar partes que son mias. esto puede luego generar un conflicto. por obvias razones.
+		Luego, Digamos que tu tieneseste archivo:
+
+		# POS1
+		Hola Este es mi
+		archivo
+		aquiabro corchetes 
+		{
+
+		}
+		y ya lo cerre :D
+
+
+		Eso de ahi es tu archivo y ambos lo tenemos exactamente igual y luego yo vengo asi
+		todo con ganas de modificar el archivo y pongo
+
+		#POS2
+		Hola Este es mi
+		archivo
+		aquiabro corchetes
+		{
+			Y esta es mi modificacion D:
+		}
+		y ya lo cerre :D
+
+
+		Entonces, tu quieres saber si es que yo he modificado algo y ademas
+		quieres tenerlo en tu branch. Es decir, quieres poner mis modificaciones a este archivo comun.
+
+		Entonces el procedimiento es este:
+
+		Branch actual: ken
+		1. git checkout diego
+		Bracnch actual: diego
+		2. git pull			# es mas, facil git mismo te dice que tu 'diego' local esta retrasado, asi que te recomienda un pull para recoger los datos.
+		3. git checkout ken
+		Branch actual: ken
+		4. git merge diego
+		5. git push
+
+		Hay veces que los conflictos aparecen y te quedas en el paso 4, ya que git no tedejara hacer el push hasta que arregles los conflictos.
+		Pero eso puede llegr a ser otro tema.
+
+
+		Para que quede esto claro:
+		Tu, en tu computadora, tienes un repositorio local. Este repositorio local tiene todos los branches: diego, ken, dev, y master.
+		Tu puedes moficiar cada uno de esos bracnhes si es que tienes el permiso (actualmente si lo tienes)
+		Existe, en algun servidor externo a tu compu, ese repositorio externo (no recuerdo la palabra en ingles). Este tambien tiene los mismos branches.
+		Obivmanete existe la posibilidad que tu branch quede desactualizado ya que el servidor externo pueda tener nuevos cambios.
+		Como es que tu git local llega a saber que hay cambios? pues simple, si estas en tu branch, (ken) y luego haces git pull tu *repositorio* local
+		envia estos datos: los branches que tienes en tu repo local y el branch actual en el que estas a el repo externo. El repo externo
+		dice,'ok, enviare todos los cambios que he tenido en el branch actual y ademas informacion nueva con respecto a los otros branches, pero no los cambios'.
+		Eso llega a tu repo local, y git modifica tu branch actual y ademas tu repo local. Entonces, despues de hacer esta operacion del pull, te cambias de branch
+		y este tuvo modificaciones, entonces git te dice: haz un git pull, tu branch actual esta retrasado.
+
+		Se entiende?  ahora? D: pera. D: manzanas por favor D: y si es pera, que sea jugosa D:  no jamjea j gustan las secas D: pero, 
+	verdad, a cuanto la galleta de 50? D: a 70 D: carero, me voy a otra tienda D:ajaj ya mira D: 
+
+	  entonces dices que cuando hago pull, me llegan los cambios que he tenido en el branch actual? no entiendo D:
+		'Alo?, Ken? Pues, si, nos informan que esta vendiendo a 70 la galleta de 50 y cerraremos su tienda por carero D:' jajajj xD ya... 
+
+
+		una pregunta antes de seguir... cuando hago pull, qué estoy ahciendo? jalando archivos del servidor hacia mi branch?
+
+
+
+		Imagina un  'arbol'e
+		[REPO LOCAL]
+			- ken *
+			- diego
+			- dev
+			- master
+
+
+		El asterisco indica tu 'branch actual'. El branch donde actualmente estas. vale? D: ya pero... con lo que no entiendo, entonces eso quiere decir que alguine puede cambiar lo que yo tengo en mi bracnh? si. D: pues eso
+		Resulta que se pueden modificar los permisos de tal forma que solo tu puedas modificar tu branch D:  dame un toque D: yo tambien voy a atender la puerta un rato D:
+    # HOLA?
+		un toque D: ok
+		mientras escribiré preguntas D:
+
+		- cuando haces checkout cambias de branch?
+		- si es así, entonces al hacer checkout diego, y luego git pull entonces más arriba mencionas que modifica mi branch actual y ademas tu repo local, pero mi branch actual es diego D:
+		- Te puedo llamar cuando termines? D: es que creo que seria más rapido por una llamada... 
+		Ok, termine, vale llama en 5 D: 5 segundos? D:llama nomas xd xD 
+
+
+	Ken
+	A
+	Diego
+	A
+
+
+
+Diego
+
+termine  
+
+asdfghj
+
+asdfghj
+
+
