@@ -1,0 +1,500 @@
+   73  cat /var/log/syslog.0 | grep wlan0 > syslog.0
+   74  cat /var/log/syslog | grep wlan0 > syslog.0
+   75  ll /var/log/syslog*
+   76  ls
+   77  vi syslog.0 # creo que este tiene toda la info, mas que syslog.1 ya que ese  feuse modificaoo  Diego te refieres a eso que estabas modificando porque le di  a :q! D:
+   78  # ah, nono, no te preocupes, me referia a syslog no a xorg D: ... jajaja
+   79  # brother, no entiendees moucho, verdad? D: pues... no mucho
+   80  #xD
+   81  ##  jj continuemos, luego habra tiempo para explicarte mejor :)
+   82  ls
+   83  vi syslog
+   84  ls
+   85  :q!
+   86  ls
+   87  pwd
+   88  cd /tmp
+   89  ls
+   90  mkdir compat-wireless
+   91  cd compat-wireless/
+   92  wget http://www.orbit-lab.org/kernel/compat-wireless-3-stable/v3.6/compat-wireless-3.6.8-1.tar.bz2
+   93  tar -xvf compat-wirelees-*
+   94  tar -xvf compat-wireless-3.6.8-1.tar.bz2 
+   95  cd compat-wireless
+   96  ls
+   97  cd compat-wireless-3.6.8-1/
+   98  make clean
+   99  make
+  100  make install
+  101  ~make
+  102  sudo make
+  103  sudo make install
+  104  sudo make clean
+  105  sudo make
+  106  sudo make install
+  107  cat /etc/lsb-release
+  108  lsusb
+  109  pwd
+  110  ls
+  111  mkdir PROGRAMAS
+  112  ls
+  113  cd PROGRAMAS
+  114  ls
+  115  vim borra.palabra.incial
+  116  which bash
+  117  vim borra.palabra.incial
+  118  vi borra.palabra.incial
+  119  exit
+  120  which bash
+  121  sudo -i
+  122  exit
+  123  youtube-dl --list-formats http://www.youtube.com/watch?v=XvCD78eA46E
+  124  youtube-dl -f 2 http://www.youtube.com/watch?v=XvCD78eA46E
+  125  youtube-dl -f 135 http://www.youtube.com/watch?v=XvCD78eA46E
+  126  pwd
+  127  ls
+  128  rm VIM*
+  129  ls
+  130  youtube-dl --list-formats http://www.youtube.com/watch?v=XvCD78eA46E
+  131  youtube-dl -f 134 http://www.youtube.com/watch?v=XvCD78eA46E
+  132  sudo apt-get install ia32-libs
+  133  sudo apt-get update
+  134  sudo apt-get install ia32-libs
+  135  pwd
+  136  ls
+  137  cd Desktop/
+  138  ls
+  139  cd ANDROID/
+  140  mkdir JAVA
+  141  cd JAVA
+  142  vim HolaMundo.java
+  143  ls
+  144  vi holamundo.java
+  145  vi asf
+  146  vi as
+  147  ls
+  148  mv as Holamundo.java
+  149  ls
+  150  vi Holamundo.java
+  151  java Holamundo.java
+  152  vi Holamundo.java
+  153  java Holamundo.java
+  154  vi Holamundo.java
+  155  mv Holamundo.java HolaMundo.java
+  156  ls
+  157  java HolaMundo.java
+  158  clear
+  159  vi HolaMundo.java
+  160  clear
+  161  vi HolaMundo.java
+  162  clear
+  163  cat HolaMundo.java
+  164  java HolaMundo.java
+  165  java HolaMundo
+  166  whatis javac
+  167  whatis Javac
+  168  java -cp Holamundo
+  169  java -cp HolaMundo
+  170  java -cp . HolaMundo
+  171  java -cp . HolaMundo.java
+  172  vi HolaMundo.java
+  173  java -cp . HolaMundo.java
+  174  vi HolaMundo.java
+  175  java -cp . HolaMundo.java
+  176  java -cp . HolaMundo
+  177  clear
+  178  ls
+  179  /sbin/init
+  180  file /sbin/init
+  181  file /sbin/init
+  182  java -version
+  183  wchi
+  184  which java
+  185  cd /usr
+  186  ls
+  187  ls -lSah
+  188  cd local
+  189  ls
+  190  javac -version
+  191  which java
+  192  which bash
+  193  whatis sh
+  194  whatis java
+  195  man java
+  196  which java
+  197  youtube-dl -cit http://www.youtube.com/list=PLBBE853AB00AF7765
+  198  youtube-dl -ci http://www.youtube.com/list=PLBBE853AB00AF7765
+  199  youtube-dl -ci http://www.youtube.com/playlist?list=PLBBE853AB00AF7765
+  200  ls
+  201  pwd
+  202  cd test
+  203  ls
+  204  cd ..
+  205  ls
+  206  su cuenta2
+  207  man tar
+  208  locate gui
+  209  which gui
+  210  pwd
+  211  ls
+  212  youtube-dl -cigt http://www.youtube.com/playlist?list=PLBBE853AB00AF7765
+  213  youtube-dl -cit http://www.youtube.com/playlist?list=PLBBE853AB00AF7765
+  214  ls
+  215  youtube-dl -U
+  216  exit
+  217  youtube-dl -v
+  218  youtube-dl --list-extractors
+  219  youtube-dl -version
+  220  man youtube-dl
+  221  youtube-dl --version
+  222  youtube-dl -u
+  223  man youtube-dl
+  224  youtube-dl -U
+  225  man sudo
+  226  sudo -s
+  227  sudo pip install --upgrade youtube-dl
+  228  sudo apt-get install python-setuptools
+  229  sudo pip install --upgrade youtube-dl
+  230  sudo easy_install  pip
+  231  sudo pip install --upgrade youtube-dl
+  232  youtube-dl --version
+  233  sudo hamachi login
+  234  su cuenta2 
+  235  vi git-tutorial.txt
+  236  sudo apt-get install git
+  237   # sdf
+  238  # sdf
+  239  mplayer /usr/share/sounds/LinuxMint/stereo/window-slide.ogg
+  240  sudo apt-get install mplayer
+  241  sudo apt-get install mplayer
+  242  mplayer /usr/share/sounds/LinuxMint/stereo/window-slide.ogg
+  243  # jojo xd
+  244  mplayer /usr/share/sounds/LinuxMint/stereo/window-slide.ogg
+  245  # jojo xdl
+  246  mplayer /usr/share/sounds/LinuxMint/stereo/window-slide.oggs
+  247  ls
+  248  mkdir git
+  249  cd git/
+  250  ls
+  251  git --version
+  252  git clone https://github.com/degva/GKD-client-side.git
+  253  ls
+  254  cd GKD-client-side/
+  255  ls
+  256  clear
+  257  # esta es la pagina: https://github.com/degva/GKD-client-side
+  258  # entra y me avisas D: 
+  259  #listo
+  260  ls
+  261  # AGUA!
+  262  # ya, es solo para acordarme xd
+  263  ls 
+  264  vi test.f
+  265  ls
+  266  git status
+  267  # ok, git status es para que veas en que estas
+  268  # te recomiendo que apuntes :d
+  269  # git status: ves en que situacion te encuentras.
+  270  # ya? D:asdfasdfas espera xD
+  271  wait 15
+  272  sleep 15
+  273  sleep 15
+  274  # listo D:
+  275  # AGUA!
+  276  # listo? D: SI
+  277  ls
+  278  git status
+  279  git add test.f #con eso puedes agregar un archi
+  280  git status
+  281  # git add test.f con eso agregamos test.f al repositorio local. pero aun no esta perpetrado
+  282  # asi que hacemos
+  283  git commit -a
+  284  git config --global user.email "a20114255@pucp.pe"
+  285  git config --global user.name "Ken Vega"
+  286  git commit -a 
+  287  ls,
+  288  git config --global core.editor "vim" 
+  289  # me avisas D:;sdf ya 
+  290  clear
+  291  ls
+  292  git status
+  293  # como veras, ahi dice: changes to be committed
+  294  # entonces ,lo perpertramos D:
+  295  git commit -a
+  296  rm .git/index.lock 
+  297  git commit -a
+  298  # entonces, no dan un hash: [master 2d1ced0] Primer archivo de prueba y lo que escrubimos
+  299  ls
+  300  git status
+  301  git push
+  302  git config --global push.default simple
+  303  # ok, ahora, ve la pagina y ve el archivo, lo eliminare pronto D:
+  304  # ya... sí está D:
+  305  # listo, ahora hare un git pull para recoger los ultimos cambios en el repositorio
+  306  git pull
+  307  ls
+  308  # y se borro
+  309  # ahora, actualmente estamos en el branch master
+  310  git branch
+  311  # ahi lo puedes comfirmr
+  312  # asi que, como veras en el ultimo pull hay un nuevo branch, y nos cambiaremos a el tu branch
+  313  git checkout ken
+  314  # y nos dice que ya se cambio a el nuevo branch, Ken
+  315  # esto indica que tu git local ahora ha adoptado a este nuevo branch, pero los otros (diego y dev) se han quedado en el aire por ahora
+  316  git status
+  317  git branch
+  318  # en ambos comandos pudemos confirmar que estamoen en el branch ken
+  319  # AGUA!
+  320  # ahora, aqui viene lo interesante, dejame poner git en mi pc para hacerlo
+  321  # mientras ve jugando un poco por aca D:
+  322  # Diego
+  323  #un rato, debo atender a la mascota D:
+  324  # me avisas, yo ya estoy D:
+  325  # en reliadad, regreso, debo atender algo con AGUA!
+  326  # ya estoy D:
+  327  # me avisas D:
+  328  #ya estoy
+  329  #estas? D:si
+  330  ls
+  331  git status
+  332  # ok, ahora, veremos lo que es el merge
+  333  digamos que tu creas un archivo
+  334  vi comosea
+  335  ls
+  336  git status
+  337  # ahora, hacemos el proceso ese
+  338  git add comosea
+  339  git commit -a
+  340  git push
+  341  ls
+  342  # listo
+  343  git status
+  344  # ahora, si esntras a la pagina ese archivo solo estara en tu branch, Ken
+  345  ##  av ere inclus D:c# me avisas
+  346  # ah...
+  347  #ahora... me puedes explicar una cosa?
+  348  # qué es branch? en 
+  349  # Rama , como una rama de un arbol y master es el tronco? o por qué está master ahí?
+  350  # nosotros decidimos cual es el tronco :P
+  351  # en realidad, el tronco-tronco es el proyecto en si
+  352  # pero tiene varias partes, solo una es la que se expone: en este caso, master
+  353  # pero podemos usar ken o diego o dev
+  354  # dime otra cosa... le han pueseto de nombre master o venía así?
+  355  # ... ehh.. las doscosas son lo mismo xd no D: porque... a ver... no sé en qué momento exactamente
+  356  # le pusiste de nombre a "mi branch" de nombre le pusiste "ken"
+  357  ## hh, es que lo cree en la pagina xd
+  358  # bueno, eso no importa D:
+  359  # la idea es que si viene con master automaticamente
+  360  # creo que tu tambien puedes crear algunos branches 
+  361  # como sea D:
+  362  ls
+  363  # lo que vamos hacer ahora es mezclar dev con tu branch, pero no en viceversa
+  364  # es decir, lo que esta en tu branch se mezclara con lo que esta en dev. dev sera el modificado
+  365  # vale?  espera, entonces merge lo unico que hace es poner archivos solo en mi branch y no necesito de pull
+  366  #ni push?
+  367  # nono, no entiendes...
+  368  # mira, mejor l hacemos practico. facil sacas tus propias conclusiones :P
+  369  ls
+  370  git checkout dev
+  371  # nos movimos a dev, ya no estamos en ken
+  372  ls
+  373  # como podras ver, no esta el archivo comosea
+  374  # ahora, haremos un merge con tu branch
+  375  git merge ken
+  376  ls
+  377  git branch
+  378  git status
+  379  # ahora, acabamos de mezclar dev con tu branch, y no hay por que hacer commit (solo push, mira el status)
+  380  # ya que el commit fue ejcutado en tu branch. no es necesario hacerlo dos veces
+  381  # listo? D: ... ... espera... ok liiiiiissstooooooo ! xD
+  382  ls
+  383  cat comosea
+  384  # el archivo esta tal y como esta en ken
+  385  git push #ahora lo publicaremos en dev (paso opcional)
+  386  # ahora, nos iremos a mi branch
+  387  git checkout diego
+  388  # aqui, mezclare diego con dev
+  389  ls
+  390  git merge dev
+  391  git status
+  392  # ahora, lo voy a modificar en mi branch
+  393  vi comosea 
+  394  git status
+  395  # ahora, no solo debo hacer un git push, si no tambien un git commit
+  396  # y el archivo comosea esta marcado como modificadoa
+  397  # hago lo que se debe hacer
+  398  git commit -a
+  399  git push
+  400  ls
+  401  git status
+  402  # sigo en diego
+  403  cat comosea
+  404  git checkout ken
+  405  cat comosea
+  406  # te das cuenta como funciona?
+  407  # etoncs cada que yo modifico un archivo, le hago commit -a y luego push... no? 
+  408  # dime otra cosa... le han pueseto de nombre master o venía así?aksdefaksmdfalkmdf
+  409  #entonces, cada que yo modifique algo y lo pushee, se quedará en mi branch no?
+  410  ## exacto.
+  411  # ya,... entonces, lo de merge me lo enseñaste para?
+  412  # para lo que viene
+  413  ls
+  414  git merge diego
+  415  ls
+  416  cat comosea
+  417  git status
+  418  git branch
+  419  git push
+  420  git checkout dev
+  421  git status
+  422  cat comosea
+  423  git merge ken
+  424  git push
+  425  cat comosea
+  426  git checkout ken
+  427  git status
+  428  # entiendes como va la cosa? D: # dame unos segundos para ver todo lo de arriba d enuevo D: 
+  429  # cuando, haces : "git branch" y luego "git push" ahí... pues... qué estás haciendo? 'emp
+  430  # git branch es para que veas en que branch estas y ademas para que veas los nombres de otros branches
+  431  git branch
+  432  # git push, esjustamente para 'empujar' tu codigo al servidor, en este caso github.
+  433  # ya... es como... guardar lo que tienes en el servidor no?
+  434  # exacto
+  435  # ya... un rato más D: ent
+  436   ahora para que veas que acabamos de hacer
+  437  git log --graph
+  438  git log --graph --full-history --all --pretty=format:"%h%x09%d%x20%s"
+  439  git log --graph --full-history --all --color         --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s" #
+  440   # DIEGO! demonios# xD vas muy rápido xD
+  441   # ahora cómo llego a ver los 
+  442  # LAGAGG de arriba si no se puede hacer scroll up?
+  443  # ahora sí eres tú borther
+  444  # git push, esjustamente para 'empujar' tu codigo al servidor, en este caso github.
+  445  ls
+  446  cd git
+  447  ls
+  448  cd GKD-client-side/
+  449  ls
+  450  vi comosea
+  451  ls
+  452  mkdir testing-gtk
+  453  cd testing-gtk/
+  454  mkdir Ken
+  455  cd Ken
+  456  ls
+  457  which gtk2
+  458  which gtk3
+  459  which GTK
+  460  locate GTK
+  461  sudo apt-get install libgtk-3-dev
+  462  youtube-dl --list-formats https://www.youtube.com/watch?v=Dtgn22vBeM4
+  463  youtube-dl -f 135 https://www.youtube.com/watch?v=Dtgn22vBeM4
+  464  ls
+  465  mv GTK\ \ window\ tutorial\ -\ C-Dtgn22vBeM4.mp4 /home/gfreeman2/Videos/
+  466  ls
+  467  cd /home/gfreeman2/Videos/
+  468  LS
+  469  ls
+  470  youtube-dl --list-formats https://www.youtube.com/watch?v=Dtgn22vBeM4
+  471  youtube-dl -f 18 https://www.youtube.com/watch?v=Dtgn22vBeM4
+  472  ls
+  473  cd ~/git/GKD-client-side/testing-gtk/Ken/.
+  474  ls
+  475  vi example-4.c
+  476  vi example-4.c
+  477  youtube-dl --list-formats https://www.youtube.com/watch?v=Dtgn22vBeM4
+  478  youtube-dl -f 22 https://www.youtube.com/watch?v=Dtgn22vBeM4
+  479  ls
+  480  mv GTK\ \ window\ tutorial\ -\ C-Dtgn22vBeM4.mp4  /home/gfreeman2/Videos/
+  481  ls
+  482  cd Videos/
+  483  ls
+  484  ls
+  485  cd PROGRAMAS/
+  486  ls
+  487  vi ApagaCompu.sh
+  488  sh ApagaCompu.sh 
+  489  which bash
+  490  vi ApagaCompu.sh 
+  491  sudo sh ApagaCompu.sh 
+  492  # jajaxd 
+  493  # luego lo explico
+  494  sudo apt-get install g++
+  495  # brother? D
+  496  #_
+  497  #:
+  498  #i-
+  499  # hola?
+  500  cd ..
+  501  ls
+  502  # DOnde esta git? D:}
+  503  # se supone que... por ahí D:
+  504  #eh... pues la verdad que no recuerdo dónde se supne que debería estar... yo ni lo moví así que debería estar donde debe D:
+  505  locate git
+  506  locate git | grep GTK
+  507  locate git | grep GKD
+  508  ls
+  509  ls
+  510  cd ~
+  511  ls
+  512  cd git/
+  513  ls
+  514  cd GKD-client-side/
+  515  ls
+  516  git pull
+  517  # GUATS! D: COMO NO TE PIDIO CLAVED::::::
+  518  # pues... brother... no entendí D: pero la cuestión es que estoy conectado.. xD 
+  519  ## ah ya sé! aunque puede ser que no... ( en realidad es muy nada probable ) pero puede que sea porque verifique mi cuenta con el correo D:
+  520  # ok no :
+  521  ls
+  522  git checkout diego
+  523  git checkout ken
+  524  ls
+  525  git rm comosea
+  526  ls
+  527  rm comosea 
+  528  ls
+  529  git status
+  530  git add testing-gtk/
+  531  gut status
+  532  git status
+  533  git commit -a
+  534  git push
+  535  # Ops... D: tengo que recordar...
+  536  git push
+  537  ls
+  538  git checkout diego
+  539  git pull
+  540  # MIRA LA GUIA no pense que habia hecho tanto D:
+  541  # Bueno, pastrulo pe
+  542  git checkout ken
+  543  git merge diego
+  544  git status
+  545  git push
+  546  # Ok, brotherm estas? D: si pero... cuando le dabas merge para sincronizar, te salía una vaina de merge con texto y luego qué hiciste? D:
+  547  # luego solo lo guarde
+  548  # era el comentario del commit: Merge 'diego' with ken o algo asi D:
+  549  # osea le diste :wq! ?
+  550  #  exacto
+  551  #LITO d:
+  552  ls
+  553  cd testing-gtk/
+  554  ls
+  555  cd guia/
+  556  ls
+  557  # esa es la guia D::
+  558  ls
+  559  vi GuiaC++ 
+  560  # hay mucho por hacer D:
+  561  vi GuiaC++ 
+  562  # Bueno, tu haces los impares y yo los pares, listo? D: bueno, habíamos quedado al reves pero da igual D: 
+  563  # ya, listo D:
+  564  # te cuento que en mi casa dejaron un pollo
+  565  # y las hormigas se lo estan llevando D: jajaj imposible, tienen que ser muchísimas D:
+  566  # pues... son... muchas en realidad xdd 
+  567  # no puedo, demasiado as.co..dfkg?jsdf  xD ire a botarlo D:
+  568  # bueno, salgo del scre en
+  569  espera 
+  570  #espera!!!
+  571  history
+  572  history > lodehoy.txt
