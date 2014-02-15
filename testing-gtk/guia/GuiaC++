@@ -247,8 +247,10 @@ fTotal is not 2.468
 =ENDOCODE= 
 
 Error típico por el rounding error que básicamente es cómo se guarda la variable que en este caso tiene el valor de 2.4679999 que no es 2.468. ¡TENER CUIDADO AL COMPARAR CON PUNTO FLOTANTE!
-
+}
+-------------
 2.6 BOOLEANOS
+-------------
 {
 Los booleanos pueden ser verdadero (1) o falso (0).
 Para declararlos, pues, es:
@@ -316,8 +318,9 @@ Una ultima forma de usarlo es dandolo como resultado de una funcion:
 =ENDCODE=
 
 }
-
+---------
 2.7 CHARS
+---------
 {
 	Mira esto es sencillo, los chars son en realidad integers disfrazados D: guíados por ASCII.
 	Ejemplo, el caracter 'a' está asociado con 97 ( para el teclado inglés ).Entonces si tenemos:
@@ -362,7 +365,9 @@ Habrás notado que, a veces para hacer salto de línea haces '\n', bueno esto es
 
 }
 
+--------------
 2.8 CONSTANTES
+--------------
 {
 	En C++ hay dos tipo de constantes: literales y simbolicos.
 	- Constantes literales
@@ -384,7 +389,7 @@ Habrás notado que, a veces para hacer salto de línea haces '\n', bueno esto es
 		#define PEN_PER_USD 2.58
 		float nPen = nDollars * PEN_PER_USD;
 
-		El problema con esto es que nunca podras ver el #define al momento de buscar errores con el debugger. Luego, si tu codigo es largaso
+		El problema con esto es que nunca podras ver el #define al momento de buscar errores con el debugger. Luego, si tu codigo es largaso @Ken(bueno yo siempre he usado #define y no he tenido problemas con ir al inicio de código D:)
 		y quieres saber que es PEN_PER_USD tendrias que ir a las primeras lineas de tu codigo. (Si muchacho, deben estar al principio del codigo).
 		Otra cosa es que son variables globales y pueden tener comflictos si tienes el mismo nombre para esa variable en otro pedazo de codigo.
 
@@ -401,11 +406,13 @@ Habrás notado que, a veces para hacer salto de línea haces '\n', bueno esto es
 		pero si nos quedamos en la notacion hugariana sera mejor ya que no tendremos que lidiar mucho con los nombres
 
 }
-
+---------------------------
 2.9 NOTACION HUNGARIANA (?)
+---------------------------
 {
 	// Mosuc
 }
+
 
 3.1 PRECEDENCIA Y ASOCIATIVIDAD
 {
